@@ -96,7 +96,7 @@ export default function LandingPage() {
                     duration: 1.5 
                   } 
                 }}
-                onClick={() => setIsModalOpen(true)}
+                onClick={() => window.location.href = "https://seulinkdecheckout.com"}
                 className="w-full bg-red-600 hover:bg-red-700 text-white font-black text-xl md:text-2xl py-5 px-6 rounded-lg shadow-lg uppercase tracking-wide transition-colors"
               >
                 SIM! Quero o Desconto
@@ -113,7 +113,7 @@ export default function LandingPage() {
         {/* --- CONTENT SECTION --- */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mt-8 items-center w-full max-w-4xl">
           {/* Placeholder Image */}
-          <div className="relative group cursor-pointer" onClick={() => setIsModalOpen(true)}>
+          <div className="relative group cursor-pointer" onClick={() => window.location.href = "https://seulinkdecheckout.com"}>
              <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-yellow-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
              <div className="relative bg-white rounded-lg p-2 shadow-2xl">
                 {/* Descriptive HTML comment for Unsplash Image */}
