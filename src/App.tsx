@@ -8,17 +8,17 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Clock, CheckCircle2, ShieldCheck, ShoppingCart } from 'lucide-react';
 
 const SALES_DATA = [
-  { name: "Ana P.", city: "São Paulo, SP", time: "há 2 min" },
-  { name: "Maria J.", city: "Curitiba, PR", time: "há 5 min" },
-  { name: "Juliana S.", city: "Salvador, BA", time: "há 1 min" },
-  { name: "Carla M.", city: "Porto Alegre, RS", time: "há 3 min" },
-  { name: "Beatriz L.", city: "Brasília, DF", time: "há 7 min" },
-  { name: "Fernanda R.", city: "Belo Horizonte, MG", time: "há 4 min" },
-  { name: "Patrícia G.", city: "Rio de Janeiro, RJ", time: "há 6 min" },
+  { name: "Mariana S.", city: "Campinas, SP", time: "há 2 min" },
+  { name: "Letícia F.", city: "Vila Velha, ES", time: "há 5 min" },
+  { name: "Aline V.", city: "Joinville, SC", time: "há 1 min" },
+  { name: "Renata B.", city: "Londrina, PR", time: "há 3 min" },
+  { name: "Thaís M.", city: "Goiânia, GO", time: "há 7 min" },
+  { name: "Gisele K.", city: "Manaus, AM", time: "há 4 min" },
+  { name: "Camila D.", city: "Fortaleza, CE", time: "há 6 min" },
 ];
 
 export default function App() {
-  const [timeLeft, setTimeLeft] = useState(154); // 2:34 in seconds
+  const [timeLeft, setTimeLeft] = useState(134); // 2:14 in seconds
   const [currentSale, setCurrentSale] = useState(0);
   const [showNotification, setShowNotification] = useState(false);
 
@@ -95,9 +95,9 @@ export default function App() {
           transition={{ delay: 0.4 }}
           className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed space-y-4 font-medium text-center"
         >
-          <p>Seu filho merece a chance de falar as primeiras palavras, e você merece o alívio de entender o que ele quer.</p>
-          <p>Para o preço não ser um obstáculo para o desenvolvimento dele, liberei um <span className="text-red-600 font-bold">Desconto Secreto</span>.</p>
-          <p className="font-bold text-red-600 uppercase tracking-tight">Ele desaparece assim que você fechar esta tela!</p>
+          <p>Você merece ter um parto rápido, seguro e sem o pesadelo de uma laceração. E o seu bebê não precisa de uma mãe exausta após 16 horas de sofrimento.</p>
+          <p>Para que o preço não seja o motivo de você ir para o hospital sem preparo, eu liberei um <span className="text-red-600 font-bold">Desconto Secreto</span>.</p>
+          <p className="font-bold text-red-600 uppercase tracking-tight">Ele desaparece para sempre assim que você fechar esta tela!</p>
         </motion.div>
       </header>
 
@@ -117,18 +117,18 @@ export default function App() {
                 {[1,2,3,4,5].map(s => <span key={s} className="text-yellow-400 text-sm">⭐</span>)}
               </div>
               <p className="italic text-sm md:text-base leading-relaxed font-medium">
-                "Eu já estava fechando o site porque achei que não ia ter tempo de aplicar. Sou mãe de 3 e trabalho fora. Mas vi esse desconto e decidi tentar. Foi a melhor coisa! O guia é super prático, eu uso só 15 minutinhos enquanto dou banho nele. Na primeira semana ele já começou a apontar e fazer sons novos. Eu finalmente senti que estou ajudando ele."
+                "Eu já estava fechando o site porque achei que não daria mais tempo, já estou com 37 semanas e o orçamento das fraldas apertou. Mas vi esse desconto e decidi tentar. Foi a minha salvação! O protocolo é super prático, fiz só 15 minutinhos por dia na sala de casa. Meu Léo nasceu em 3 horinhas e eu saí intacta, sem um único ponto! Serei eternamente grata."
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <img 
-                  src="https://i.ibb.co/dZc3HCJ/Personagem-14-Copia.jpg" 
-                  alt="Camila R." 
+                  src="https://i.ibb.co/R49BGprV/Depoimento-06.png" 
+                  alt="Lilia" 
                   className="w-12 h-12 rounded-full object-cover border-2 border-white/30 shadow-lg"
                   referrerPolicy="no-referrer"
                 />
                 <p className="text-xs font-bold leading-tight">
-                  <span className="block text-sm">Camila R.</span>
-                  <span className="text-white/80 font-medium">mãe do João, 2 anos</span>
+                  <span className="block text-sm">Lilia</span>
+                  <span className="text-white/80 font-medium">mãe do Léo</span>
                 </p>
               </div>
             </motion.div>
@@ -141,8 +141,8 @@ export default function App() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent pointer-events-none" />
               <img 
-                src="https://i.ibb.co/zVQq2JS3/Gemini-Generated-Image-g4z8czg4z8czg4z8.png" 
-                alt="Destravando a Fala Infantil" 
+                src="https://i.ibb.co/nMKg35jj/Design-sem-nome.jpg" 
+                alt="Protocolo Parto Seguro" 
                 className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -170,15 +170,15 @@ export default function App() {
                   <span>🔓</span> Desconto Secreto Ativado
                 </p>
                 <p className="text-black line-through text-lg decoration-red-600 decoration-2">
-                  De R$ 10,00
+                  De R$ 29,90
                 </p>
                 <div className="flex flex-col items-center justify-center -space-y-2">
                   <span className="text-gray-700 font-bold text-xl">Por APENAS</span>
-                  <span className="text-green-600 text-7xl font-black tracking-tighter">R$ 5,00</span>
+                  <span className="text-green-600 text-7xl font-black tracking-tighter">R$ 14,90</span>
                 </div>
 
                 <motion.a 
-                  href="https://checkout.destravandoafala.shop/VCCL1O8SCXUT"
+                  href="https://checkout.protocolodestrave.shop/VCCL1O8SD045"
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ 
                     duration: 1.5, 
@@ -189,7 +189,7 @@ export default function App() {
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-red-600 hover:bg-red-700 text-white font-black text-lg py-5 rounded-2xl shadow-lg shadow-red-600/20 transition-colors uppercase tracking-tight text-center block"
                 >
-                  Sim! Quero aproveitar
+                  Sim! Quero aproveitar meu Parto Seguro
                 </motion.a>
 
                 <p className="text-[10px] text-gray-400 font-medium">
@@ -198,7 +198,7 @@ export default function App() {
 
                 <div className="flex items-center justify-center gap-2 text-red-600 bg-red-50 py-2 rounded-xl border border-red-100">
                   <Clock size={18} className="animate-pulse" />
-                  <span className="font-bold text-sm">Seu link expira em: {formatTime(timeLeft)}</span>
+                  <span className="font-bold text-sm text-center">⏳ Seu link expira em: {formatTime(timeLeft)}</span>
                 </div>
               </div>
             </motion.div>
@@ -211,14 +211,14 @@ export default function App() {
               className="space-y-6"
             >
               <h3 className="text-xl font-black text-gray-900 uppercase tracking-tight flex items-center gap-2">
-                O que você vai receber agora mesmo por 5 reais:
+                O que você vai receber agora mesmo por menos de 15 reais:
               </h3>
               <ul className="space-y-4">
                 {[
-                  "Guia Destravando a Fala Infantil (PDF Completo)",
-                  "As 5 Técnicas da Rotina (para banho, jantar, troca)",
-                  "Acesso Imediato ao Acervo Prático em Vídeo (O Brincar Intencional)",
-                  "O Checklist Visível de Rotina (para Geladeira)",
+                  "Protocolo Destrave Pélvico Completo (O passo a passo biomecânico)",
+                  "Rotina Prática em Vídeo (Exercícios de apenas 15 min/dia)",
+                  "Plano Express para Reta Final (Salvamento para 35 a 40 semanas)",
+                  "Guia de Alívio Imediato da Dor (Para usar em casa e no hospital)",
                   "Acesso vitalício a todo o material",
                   "Acesso imediato pelo seu WhatsApp e E-mail",
                   "Garantia Incondicional de 30 dias (Seu risco é zero)"
@@ -232,7 +232,7 @@ export default function App() {
 
               <div className="pt-4 flex items-center gap-2 text-green-700 font-bold text-sm border-t border-gray-200">
                 <ShieldCheck size={20} />
-                <span>Compra 100% Segura e Garantida</span>
+                <span>🔒 Compra 100% Segura e Garantida</span>
               </div>
             </motion.div>
           </div>
@@ -242,7 +242,7 @@ export default function App() {
       {/* Footer */}
       <footer className="py-12 border-t border-gray-200 text-center bg-white">
         <p className="text-gray-400 text-sm italic">
-          © {new Date().getFullYear()} Instituto Base da Alfabetização. Todos os direitos reservados.
+          © {new Date().getFullYear()} Movimento Materno. Todos os direitos reservados.
         </p>
       </footer>
 
